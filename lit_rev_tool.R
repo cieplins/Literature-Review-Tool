@@ -50,5 +50,5 @@ names(out)[names(out) == "PY"] <- "Year"
 names(out)[names(out) == "SO"] <- "Publication name"
 out_data <- out[!duplicated(out$Title), ]
 
-trial <- convert2df("acm.bib", dbsource="wos", format="bibtex")
+
 write.csv(out_data, "merged.csv", row.names=FALSE)
